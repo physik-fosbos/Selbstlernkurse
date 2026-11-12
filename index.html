@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selbstlernkurse – Physik, Technologie, Mathematik</title>
+<style>
+:root{
+  --ink:#14213d; --ink2:#3d4a66; --muted:#6b7590; --bg:#f3f5fa; --card:#fff; --line:#e2e6ef;
+  --orange:#ea7317; --orange-l:#fff1e5; --blue:#2a6fdb; --blue-l:#e8f0fd;
+  --teal:#0e8a9b; --teal-l:#e2f5f7; --purple:#7b3fe4; --purple-l:#f1eafd;
+  --radius:16px; --shadow:0 6px 24px rgba(20,33,61,.08);
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;font-size:17px}
+header{background:linear-gradient(135deg,#14213d,#2a3f73);color:#fff;padding:36px clamp(16px,5vw,56px) 40px}
+header h1{margin:0 0 6px;font-size:clamp(26px,4vw,34px);line-height:1.2}
+header p{margin:0;color:#d5def2;max-width:720px}
+main{max-width:1000px;margin:0 auto;padding:28px clamp(14px,4vw,40px) 60px}
+section{margin-bottom:34px}
+h2{display:flex;align-items:center;gap:12px;font-size:23px;margin:0 0 14px}
+h2 .dot{width:14px;height:14px;border-radius:50%;flex:none}
+.physik .dot{background:var(--orange)} .technologie .dot{background:var(--teal)} .mathematik .dot{background:var(--purple)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px}
+a.kurs,div.kurs{display:block;background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px 22px;text-decoration:none;color:var(--ink);border-top:5px solid var(--line);transition:transform .15s,box-shadow .15s}
+a.kurs:hover,a.kurs:focus-visible{transform:translateY(-3px);box-shadow:0 10px 30px rgba(20,33,61,.14);outline:none}
+.physik .kurs{border-top-color:var(--orange)} .technologie .kurs{border-top-color:var(--teal)} .mathematik .kurs{border-top-color:var(--purple)}
+.kurs h3{margin:0 0 6px;font-size:19px}
+.kurs p{margin:0 0 10px;color:var(--ink2);font-size:15.5px}
+.tag{display:inline-block;background:var(--blue-l);color:var(--blue);border-radius:99px;padding:2px 11px;font-size:13px;font-weight:600;margin:2px 4px 2px 0}
+.go{display:inline-block;margin-top:8px;font-weight:700;color:var(--orange)}
+.technologie .go{color:var(--teal)} .mathematik .go{color:var(--purple)}
+div.kurs.bald{opacity:.65;box-shadow:none;border:1px dashed #c5cbe0;border-top:5px solid var(--line)}
+.bald .go{color:var(--muted)}
+.leer{color:var(--muted);font-style:italic;margin:0}
+.hinweis{background:var(--card);border-radius:var(--radius);padding:18px 22px;color:var(--ink2);font-size:15px;box-shadow:var(--shadow)}
+.hinweis strong{color:var(--ink)}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:0 16px 30px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Selbstlernkurse</h1>
+  <p>Interaktive Kurse zum selbstständigen Lernen und Üben – FOS/BOS Bayern, Ausbildungsrichtung Technik.</p>
+</header>
+
+<main>
+
+<!-- ============ PHYSIK ============ -->
+<section class="physik">
+  <h2><span class="dot"></span>Physik</h2>
+  <div class="grid">
+
+    <a class="kurs" href="physik/impuls/">
+      <h3>Impuls und Impulserhaltungssatz</h3>
+      <p>Impuls, Kraftstoß, Impulserhaltung, gerade Stöße und Stöße in der Ebene – mit Fit-Check und Checkliste.</p>
+      <span class="tag">FOS 11 LB 2</span><span class="tag">BOS 12 LB 2</span><br>
+      <span class="go">Kurs öffnen →</span>
+    </a>
+
+    <a class="kurs" href="physik/energie-arbeit/">
+      <h3>Energie und Arbeit</h3>
+      <p>Mechanische Arbeit, Energieformen, Energieerhaltung und Energiebilanz mit Reibung – mit Fit-Check und Tests.</p>
+      <span class="tag">FOS 11 LB 3</span><span class="tag">BOS 12 LB 3</span><br>
+      <span class="go">Kurs öffnen →</span>
+    </a>
+
+  </div>
+</section>
+
+<!-- ============ TECHNOLOGIE ============ -->
+<section class="technologie">
+  <h2><span class="dot"></span>Technologie</h2>
+  <div class="grid">
+
+    <a class="kurs" href="technologie/stromnetz/">
+      <h3>Das Stromnetz in Deutschland</h3>
+      <p>Vom Kraftwerk zur Steckdose: Spannungsebenen, Netzfrequenz, Netzausbau, Speicher und Smart Grid – mit Lernspiel Netzleitwarte.</p>
+      <span class="tag">KIT 12 LB 4.1 / 4.2</span><br>
+      <span class="go">Kurs öffnen →</span>
+    </a>
+
+    <a class="kurs" href="technologie/klimawandel/">
+      <h3>Treibhauseffekt und Klimawandel</h3>
+      <p>Strahlung und Treibhauseffekt, Treibhausgase, Beobachtungen und Folgen, Klimaschutz – mit Lernspiel „Klimaplan“.</p>
+      <span class="tag">KIT 12 LB 6</span><br>
+      <span class="go">Kurs öffnen →</span>
+    </a>
+
+  </div>
+</section>
+
+<!-- ============ MATHEMATIK ============ -->
+<section class="mathematik">
+  <h2><span class="dot"></span>Mathematik</h2>
+  <div class="grid">
+    <p class="leer">Noch keine Kurse – folgen in Kürze.</p>
+  </div>
+</section>
+
+<!--
+  VORLAGE FÜR EINEN NEUEN KURS
+  Diesen Block kopieren, in die passende Fach-Section (zwischen <div class="grid"> und </div>) einfügen
+  und Ordnername, Titel, Text und Lernbereiche anpassen. Einen evtl. vorhandenen Platzhalter
+  <p class="leer">…</p> bzw. den "folgt in Kürze"-Block dabei löschen.
+
+    <a class="kurs" href="FACH/ORDNERNAME/">
+      <h3>Kurstitel</h3>
+      <p>Kurze Beschreibung in einem Satz.</p>
+      <span class="tag">FOS 11 LB x</span><span class="tag">BOS 12 LB x</span><br>
+      <span class="go">Kurs öffnen →</span>
+    </a>
+-->
+
+<div class="hinweis">
+  <strong>Hinweise zur Nutzung:</strong> Öffnen Sie die Kurse am besten direkt im Browser (z.&nbsp;B. Safari, Chrome, Edge).
+  Ihr Fortschritt wird nur auf diesem Gerät und in diesem Browser gespeichert. Um auf einem anderen Gerät weiterzuarbeiten,
+  erzeugen Sie im Kurs einen Speicher-Code und lesen ihn dort wieder ein. Im privaten Modus geht der Fortschritt beim Schließen verloren.
+  <br><strong>Tipp für iPad/iPhone:</strong> In Safari auf „Teilen“ → „Zum Home-Bildschirm“ tippen – dann öffnet sich die Seite wie eine App.
+</div>
+
+</main>
+<footer>Materialien für den Unterricht an der Beruflichen Oberschule · lizenziert unter CC BY 4.0, sofern im Kurs nicht anders angegeben</footer>
+</body>
+</html>
